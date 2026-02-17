@@ -1,0 +1,7 @@
+interface:
+  display_name: "Triage Graph Change"
+  short_description: "Safely modify LangGraph triage flow"
+  default_prompt: "Use $triage-graph-change to update triage graph behavior while keeping contracts, state, and tests aligned."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "KB Retrieval Tuning"
+  short_description: "Improve support knowledge retrieval quality"
+  default_prompt: "Use $kb-retrieval-tuning to improve support KB hint quality and reliability for triage runs."
+
+policy:
+  allow_implicit_invocation: true

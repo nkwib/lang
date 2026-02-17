@@ -1,0 +1,7 @@
+interface:
+  display_name: "Run Trace Investigation"
+  short_description: "Debug run events warnings and traces"
+  default_prompt: "Use $run-trace-investigation to diagnose run lifecycle, node events, and trace regressions."
+
+policy:
+  allow_implicit_invocation: true

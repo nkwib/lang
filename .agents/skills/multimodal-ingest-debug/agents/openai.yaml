@@ -1,0 +1,7 @@
+interface:
+  display_name: "Multimodal Ingest Debug"
+  short_description: "Diagnose text image audio ingest path"
+  default_prompt: "Use $multimodal-ingest-debug to debug ingestion, transcription, and modality warnings in the media triage API."
+
+policy:
+  allow_implicit_invocation: true
