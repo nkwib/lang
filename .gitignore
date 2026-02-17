@@ -1,0 +1,14 @@
+node_modules
+.pnpm-store
+.DS_Store
+.env
+.env.*
+coverage
+*.log
+apps/api/.tmp
+apps/api/dist
+apps/ui/.svelte-kit
+apps/ui/build
+apps/ui/.vite
+apps/ui/dist
+packages/contracts/dist

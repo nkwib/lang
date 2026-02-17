@@ -1,0 +1,37 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      HOST: 0.0.0.0
+      PORT: 8080
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+      OLLAMA_TEXT_MODEL: llama3.2
+      OLLAMA_VISION_MODEL: llava
+      OLLAMA_EMBED_MODEL: nomic-embed-text
+      WHISPER_BIN: /usr/local/bin/whisper-cli
+      WHISPER_MODEL_PATH: /models/ggml-base.en.bin
+      KB_DIR: /app/apps/api/data/support_kb
+      TEMP_DIR: /app/apps/api/.tmp
+      RUN_TIMEOUT_MS: 120000
+      MODEL_TIMEOUT_MS: 45000
+      VISION_TIMEOUT_MS: 90000
+      TOOL_TIMEOUT_MS: 60000
+      KB_INIT_TIMEOUT_MS: 20000
+      KB_SEARCH_TIMEOUT_MS: 10000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  ui:
+    build:
+      context: .
+      dockerfile: apps/ui/Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      PUBLIC_API_BASE_URL: http://localhost:8080
+    depends_on:
+      - api

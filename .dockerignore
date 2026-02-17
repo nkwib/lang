@@ -1,0 +1,9 @@
+node_modules
+.pnpm-store
+.git
+.gitignore
+**/node_modules
+**/.svelte-kit
+**/dist
+**/.tmp
+coverage
