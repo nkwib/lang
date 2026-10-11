@@ -12,17 +12,17 @@
   },
   "dependencies": {
     "@media-triage/contracts": "workspace:*",
-    "@sveltejs/adapter-node": "latest",
-    "@sveltejs/kit": "latest",
-    "svelte": "latest"
+    "@sveltejs/adapter-node": "^5.5.3",
+    "@sveltejs/kit": "^2.52.0",
+    "svelte": "^5.51.3"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "latest",
-    "@testing-library/svelte": "latest",
-    "jsdom": "latest",
-    "svelte-check": "latest",
-    "typescript": "latest",
-    "vite": "latest",
-    "vitest": "latest"
+    "@sveltejs/vite-plugin-svelte": "^6.2.4",
+    "@testing-library/svelte": "^5.3.1",
+    "jsdom": "^28.1.0",
+    "svelte-check": "^4.4.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.18"
   }
 }

@@ -11,21 +11,21 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@fastify/cors": "latest",
-    "@fastify/multipart": "latest",
-    "@langchain/core": "latest",
-    "@langchain/langgraph": "latest",
-    "@langchain/ollama": "latest",
+    "@fastify/cors": "^11.2.0",
+    "@fastify/multipart": "^9.4.0",
+    "@langchain/core": "^1.1.24",
+    "@langchain/langgraph": "^1.1.4",
+    "@langchain/ollama": "^1.2.2",
     "@media-triage/contracts": "workspace:*",
-    "fastify": "latest",
-    "langchain": "latest",
-    "zod": "latest"
+    "fastify": "^5.7.4",
+    "langchain": "^1.2.24",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@types/node": "latest",
-    "supertest": "latest",
-    "tsx": "latest",
-    "typescript": "latest",
-    "vitest": "latest"
+    "@types/node": "^25.2.3",
+    "supertest": "^7.2.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
   }
 }
