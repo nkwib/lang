@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@media-triage/contracts": "workspace:*",
-    "@sveltejs/adapter-node": "^5.5.3",
+    "@sveltejs/adapter-node": "^6.0.0",
     "@sveltejs/kit": "^2.52.0",
     "svelte": "^5.51.3"
   },
