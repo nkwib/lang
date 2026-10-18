@@ -13,7 +13,7 @@
   "dependencies": {
     "@media-triage/contracts": "workspace:*",
     "@sveltejs/adapter-node": "^5.5.3",
-    "@sveltejs/kit": "^2.52.0",
+    "@sveltejs/kit": "^3.1.0",
     "svelte": "^5.51.3"
   },
   "devDependencies": {
